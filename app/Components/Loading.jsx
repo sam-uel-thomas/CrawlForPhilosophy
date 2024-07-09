@@ -1,7 +1,13 @@
+import { TypeAnimation } from "react-type-animation";
+
 export default function Loading() {
     return (
-        <div className="flex-grow flex flex-col items-center justify-center">
-            <h2>LOADING</h2>
-        </div>
+        // <TypeAnimation
+        //     sequence={["LOADING", "LOADING.", "LOADING..", "LOADING...", "LOADING..", "LOADING.", ""]}
+        //     repeat={Infinity}
+        //     wrapper="h2"
+        //     speed={10}
+        // />
+        <h2>LOADING</h2>
     );
 }

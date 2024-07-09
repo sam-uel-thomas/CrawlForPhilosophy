@@ -1,5 +1,11 @@
 import { useState, useEffect } from 'react';
 
+/**
+ * Custom hook to fetch data from Wikipedia API based on the input.
+ *
+ * @param {string} input - The input to search for in Wikipedia.
+ * @returns {boolean|null} - Returns true if the page exists, false if it doesn't, and null if the request is still in progress.
+ */
 const useFetchWikipedia = (input) => {
     const [pageExists, setPageExists] = useState(null);
 
